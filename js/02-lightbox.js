@@ -6,6 +6,7 @@ const createMarkupItems = ({ preview, original, description }) =>
   `<a class="gallery__item" href="${original}">
   <img class="gallery__image" src="${preview}" alt="${description}" />
 </a>`;
+
 const createGalleryMarkup = galleryItems.map(createMarkupItems).join("");
 galleryRef.insertAdjacentHTML("beforeend", createGalleryMarkup);
 
